@@ -1,6 +1,5 @@
 import Hero from "../components/Hero";
 import InfoGrid from "../components/InfoGrid";
-import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -9,7 +8,6 @@ function Home() {
         <Hero />
         <InfoGrid />
       </main>
-      <Footer />
     </div>
   );
 }

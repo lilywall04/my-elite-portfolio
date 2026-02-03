@@ -1,5 +1,3 @@
-// src/components/cats2048/Cats2048Game.tsx
-
 import { useEffect, useMemo, useRef, useState } from "react";
 import React from "react";
 import gsap from "gsap";

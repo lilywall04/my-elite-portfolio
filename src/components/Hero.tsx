@@ -1,4 +1,6 @@
 import profilePhoto from "/Users/lilywallace/my-elite-portfolio/src/assets/LilyPhoto1.jpeg";
+import HoverHearts from "../components/HoverHearts";
+
 
 function Hero() {
   return (
@@ -45,14 +47,15 @@ function Hero() {
         <div className="relative overflow-hidden rounded-3xl border border-black/5 bg-white shadow-sm">
           <div className="absolute inset-0 bg-gradient-to-br from-pink-300/35 via-purple-300/20 to-transparent" />
           <div className="relative p-4">
+            <HoverHearts>
             <img
               src={profilePhoto}
               alt="Portrait of Lily Wallace"
               className="h-[360px] w-full rounded-2xl object-cover object-top"
             />
+            </HoverHearts>
           </div>
         </div>
-
         <p className="mt-3 text-center text-xs text-slate-500">
           {/* ✅ Optional: Add a caption like “Kansas City, MO” */}
         </p>
