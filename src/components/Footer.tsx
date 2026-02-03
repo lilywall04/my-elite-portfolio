@@ -11,8 +11,7 @@ function Footer() {
               Lily Wallace
             </div>
             <p className="mt-2 max-w-md text-sm leading-relaxed text-slate-700">
-              Open to internships and projects focused on frontend engineering,
-              UI systems, and delightful user experiences.
+              Love me a pretty UI Design. Thanks for visiting! Make sure to check out my socials! 
             </p>
           </div>
 

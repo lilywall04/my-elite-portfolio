@@ -20,10 +20,10 @@ function Hero() {
         </h1>
 
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-700 sm:text-lg">
-          I’m a frontend developer who loves building polished React + TypeScript
-          interfaces with thoughtful UX and clean component systems. I enjoy
-          blending design and engineering to make web apps feel smooth, modern,
-          and “expensive.”
+            Computer Science–Software Development major with a strong foundation in front-end 
+            development, data analysis, and problem-solving. I have hands-on experience building 
+            user-focused applications with modern frameworks and collaborating in technical teams. 
+            I bring a detail-oriented, creative approach to turning complex problems into effective solutions.
         </p>
 
         <div className="mt-7 flex flex-wrap gap-3">

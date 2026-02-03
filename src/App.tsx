@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import CatsGame from "./pages/Cats";
+import Favorites from "./pages/Favorites";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cats" element={<CatsGame />} />
+          <Route path="/favorites" element={<Favorites />} />
         </Routes>
 
         <Footer />

@@ -1,6 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
+  const baseLink =
+    "rounded-full px-4 py-2 text-sm font-semibold transition";
+
+  const activeLink =
+    "bg-gradient-to-r from-pink-500 to-purple-500 text-white shadow-sm";
+
+  const inactiveLink =
+    "text-slate-700 hover:bg-black/5 hover:text-slate-900";
+
   return (
     <header className="sticky top-0 z-50 border-b border-black/5 bg-white/70 backdrop-blur">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4 sm:px-8">
@@ -15,19 +24,33 @@ function Navbar() {
         </Link>
 
         <nav className="flex items-center gap-2">
-          <Link
+          <NavLink
             to="/"
-            className="rounded-full px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-black/5 hover:text-slate-900"
+            end
+            className={({ isActive }) =>
+              `${baseLink} ${isActive ? activeLink : inactiveLink}`
+            }
           >
             Home
-          </Link>
+          </NavLink>
 
-          <Link
+          <NavLink
             to="/cats"
-            className="rounded-full bg-gradient-to-r from-pink-500 to-purple-500 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:brightness-105"
+            className={({ isActive }) =>
+              `${baseLink} ${isActive ? activeLink : inactiveLink}`
+            }
           >
             Cat 2048
-          </Link>
+          </NavLink>
+
+          <NavLink
+            to="/favorites"
+            className={({ isActive }) =>
+              `${baseLink} ${isActive ? activeLink : inactiveLink}`
+            }
+          >
+            Favorites
+          </NavLink>
         </nav>
       </div>
     </header>
