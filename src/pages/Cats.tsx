@@ -1,4 +1,6 @@
 import Cats2048Game from "../components/cats2048/Cats2048Game";
+import CatFactCard from "../components/cats2048/CatFactCard";
+
 
 function CatsGame() {
   return (
@@ -16,6 +18,7 @@ function CatsGame() {
       </section>
 
       <Cats2048Game />
+      <CatFactCard />
     </main>
   );
 }
